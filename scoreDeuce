@@ -18,9 +18,9 @@ public class Tennis {
 			} // if
 			else if (teamscoreA >= 40 && teamscoreB >= 40) {
 				if (teamscoreA > teamscoreB ) {
-					System.out.println("advan team A");
+					System.out.println("advan team A"); // 위의 상태에서 A의 점수가 B보다 높아지면 ad를 출력한다.
 				} else if (teamscoreB > teamscoreA) {
-					System.out.println("advan team B");
+					System.out.println("advan team B"); // 위의 상태에서 B의 점수가 A보다 높아지면 ad를 출력한다.
 				} // else if
 			} // if
 

@@ -10,9 +10,8 @@ public class DisplayManager {
 		
 		int t1Point = dm.getPoint()[0];
 		int t2Point = dm.getPoint()[1];
-		//TODO : Ãâ·Â ÆíÁı
-		String status = String.format("[1ÆÀ] Æ÷ÀÎÆ®:%s, °ÔÀÓ:%d, ¼¼Æ®:%d "
-				+ "[2ÆÀ] Æ÷ÀÎÆ®:%s, °ÔÀÓ:%d, ¼¼Æ®:%d\n", strPoint[t1Point],
+		String status = String.format("[1íŒ€] %sí¬ì¸íŠ¸, ê²Œì„[ %d ] ì„¸íŠ¸[ %d ]\n"
+				+ "[2íŒ€] %sí¬ì¸íŠ¸, ê²Œì„[ %d ] ì„¸íŠ¸[ %d ]\n\n", strPoint[t1Point],
 				dm.getGameScore()[0],
 				dm.getSetScore()[0],
 				strPoint[t2Point],

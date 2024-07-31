@@ -3,7 +3,6 @@ package tennisProject;
 public class DataManager {
 	
 	private static DataManager instance = new DataManager();
-	//TODO ¼±¼ö ÀÌ¸§
 	private int totalSetNumber = 0;
 
 	// point 0 == 0, 1 == 15, 2 == 30, 3 == 40 
@@ -21,7 +20,6 @@ public class DataManager {
 	}
 	
 	public void pointWinner(int teamNumber) {
-		//TODO : µà½º ·ÎÁ÷
 		this.point[teamNumber]++;
 		
 		if (point[teamNumber] > 4) {
@@ -35,7 +33,7 @@ public class DataManager {
 		}
 		
 		if (setScore[teamNumber] > totalSetNumber / 2) {
-			System.out.printf("%dÆÀ ½Â¸®\n", teamNumber+1); // test °ÔÀÓÁ¾·á
+			System.out.printf("%díŒ€ ìŠ¹ë¦¬\n", teamNumber+1); 
 			setScore = new int[]{0, 0};
 			isStop = true;
 		}

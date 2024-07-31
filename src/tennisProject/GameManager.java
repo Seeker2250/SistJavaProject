@@ -13,8 +13,9 @@ public class GameManager {
 		
 		while (!dm.isStop()) { // test
 			int i = rnd.nextInt(2);
-			dsm.dispScoreBoard();
 			dm.pointWinner(i);
+			dsm.dispScoreBoard();
+			
 			System.out.println("> 엔터치면 진행한다.");
 			try {
 				System.in.read();
@@ -22,9 +23,11 @@ public class GameManager {
 			} catch (IOException e) {
 				
 				e.printStackTrace();
-			} 
+			}
 			
-		}
+			
+			
+		}//while
 	}
 
 }

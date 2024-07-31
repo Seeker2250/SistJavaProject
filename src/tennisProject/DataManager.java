@@ -38,9 +38,7 @@ public class DataManager {
 			if(Math.abs(point[0]-point[1]) >=2 ) { //2점차이 이상나면 바로 승리
 				gameScore[teamNumber]++;
 				point = new int[]{0, 0};
-			} 
-			
-			
+			}
 		}
 
 		if(gameScore[teamNumber]>=6) {

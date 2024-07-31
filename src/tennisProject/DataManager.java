@@ -42,10 +42,16 @@ public class DataManager {
 			
 			
 		}
-		
-		if (gameScore[teamNumber] >= 6) {
-			setScore[teamNumber]++;
-			gameScore = new int[]{0, 0};
+
+		if(gameScore[teamNumber]>=6) {
+			if ((Math.abs(gameScore[0] - gameScore[1]) < 2)&&gameScore[0]==gameScore[1]) {
+
+			}
+			else{
+				setScore[teamNumber]++;
+				gameScore = new int[]{0, 0};
+				////승리
+			}
 		}
 		
 		if (setScore[teamNumber] > totalSetNumber / 2) {

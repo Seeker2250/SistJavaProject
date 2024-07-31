@@ -44,7 +44,7 @@ public class DataManager {
 		}
 
 		if(gameScore[teamNumber]>=6) {
-			if ((Math.abs(gameScore[0] - gameScore[1]) < 2)&&gameScore[0]==gameScore[1]) {
+			if (Math.abs(gameScore[0] - gameScore[1]) < 2) {
 
 			}
 			else{

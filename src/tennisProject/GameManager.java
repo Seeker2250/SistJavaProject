@@ -1,5 +1,6 @@
 package tennisProject;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class GameManager {
@@ -14,6 +15,15 @@ public class GameManager {
 			int i = rnd.nextInt(2);
 			dsm.dispScoreBoard();
 			dm.pointWinner(i);
+			System.out.println("> 엔터치면 진행한다.");
+			try {
+				System.in.read();
+				System.in.skip( System.in.available() );
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			} 
+			
 		}
 	}
 

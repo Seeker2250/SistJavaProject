@@ -30,25 +30,15 @@ public class DataManager {
 		if (point[teamNumber]>=3) { // 한 놈이 40점 이상일 때 (듀스 검사해야됨)
 		
 			if (point[0]==point[1]) {// 같으면 듀스메세지
-				
+				System.out.println("\t\t듀스 발생");
 				point[0] =3;
 				point[1] =3;
-				System.out.println("\t\t듀스 발생");
 			}
-			
-			if(Math.abs(point[0]-point[1]) >=2 && point[teamNumber]==4) { //40A 상태에서 2점차이 이상나면 바로 승리
-				gameScore[teamNumber]++;
-				point = new int[]{0, 0};
-<<<<<<< HEAD
-			}
-=======
-			}else if (point[teamNumber]==5) { // 40 AA면 승리하고 리셋
+
+			if(Math.abs(point[0]-point[1]) >=2 ) { //2점차이 이상나면 바로 승리
 				gameScore[teamNumber]++;
 				point = new int[]{0, 0};
 			}
-			
-			
->>>>>>> origin/main
 		}
 
 		if(gameScore[teamNumber]>=6) {

@@ -2,7 +2,7 @@ package tennisProject;
 
 public class DisplayManager {
 	
-	private String[] strPoint = { "0", "15", "30", "40", "40A"};
+	private String[] strPoint = { "0", "15", "30", "40", "40A","40AA"};
 	DataManager dm = DataManager.getInstance();
 	FileManager fm = new FileManager();
 	
